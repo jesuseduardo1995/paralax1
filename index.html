@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">My Project</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul  class=" nav navbar-nav navbar-right">
+            <li ><a  href="device.html">New Devices</a></li>
+            <li ><a href="about.html">About</a></li>
+            <li ><a href="contacts.html">Contact</a></li>
+            <li ><a href="paralax.html">Paralax Gallery</a></li>
+                    </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!--Body Part -->
+<header class="v-header container">
+  <div class="fullscreen-video-wrap">
+       <video src="video/Black_Keys.mp4" autoplay="" loop="">
+  </video>
+  </div>
+  <div class="header-overlay"></div>
+  <div class="header-content text-md-center">
+    <h1>Welcome Everyone to My Portfolio</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus perferendis necessitatibus numquam amet impedit explicabo? Debitis quasi ullam aperiam!</p>
+    <a class="btn">Find Out More</a>
+  </div>
+</header>
+
+<section class="section section-a">
+  <div class="container">
+    <h2>Section A</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+  </div>
+</section>
+
+<section class="section section-b">
+  <div class="container">
+    <h2>Section B</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+  </div>
+</section>
+
+<section class="section section-c">
+    <div class="container">
+      <h2>Section c</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+    </div>
+  </section>
+    <!--section for footer-->
+  <div class="container container-footer">
+    <footer class="copyright">
+      <p class="text-center ">My Project Copyright &copy; 2018 <br>
+      <span class="poweredby">Powered by Jesus Hernandez</span></p>
+    </footer>
+  </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--Animation with JavaScript-->
+    <script>
+      window.sr=ScrollReveal();
+      //animation for navbar
+      sr.reveal('.navbar', {
+        duration: 2000,
+        origin:'top',
+      });
+    //animation for navbar
+      sr.reveal('.showcase-left', {
+        duration: 2500,
+        delay: 500,
+        origin:'top',
+        distance: '300px',
+      });
+    //animation for the left picture first
+      sr.reveal('.showcase-right', {
+        duration: 2500,
+        origin:'right',
+        delay:500,
+        distance: '300px',
+      });
+    //animation for the right paragraph first
+      sr.reveal('.showcase-btn', {
+        duration: 2500,
+        delay: 1050,
+        origin:'left',
+        distance: '600px',
+      });
+    //animation for testimonio
+      sr.reveal('#testimonial div', {
+        duration: 2000,
+        delay: 1050,
+        origin:'bottom',
+        distance: '300px',
+      });
+    //animation for google home right
+      sr.reveal('#info1 div .row div .info-right', {
+        duration: 2500,
+        origin:'right',
+        delay:300,
+        distance: '300px',
+        viewFactor: 0.3,
+      });
+    //animation for google home picture and the info block1, this both take same play since they are in the same div
+      sr.reveal('.info-left', {
+        duration: 2500,
+        origin:'left',
+        delay:300,
+        distance: '300px',
+        viewFactor: 0.3,
+      });
+
+      sr.reveal('#info2', {
+        duration: 2500,
+        origin:'left',
+        delay:300,
+        distance: '300px',
+        viewFactor: 0.3,
+      });
+
+  //animation for the info block2
+      sr.reveal('.info-right', {
+        duration: 2500,
+        origin:'right',
+        delay:300,
+        distance: '300px',
+        viewFactor: 0.3,
+      });
+
+      sr.reveal( 'form', {
+        duration: 2000,
+        origin:'right',
+        delay:150,
+        distance: '800px',
+        viewFactor: 0.7,
+      });
+    </script>
+  </body>
+</html>
